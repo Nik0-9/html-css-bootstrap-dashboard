@@ -47,3 +47,17 @@ main {
 .data-w{
     min-width: 105px;
 }
+
+@media screen and (max-width: 576px){
+    #content table tr th:nth-child(2),
+    th:nth-child(3)
+    {
+        display: none;
+    }
+
+    #content table tr td:nth-child(2),
+    th:nth-child(3)
+    {
+        display: none;
+    }
+}
