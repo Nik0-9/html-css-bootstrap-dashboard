@@ -1,3 +1,13 @@
+:root {
+    --color-main-bg: #f8f9fa;
+    --color-hero-bg: #1b72e8;
+    --color-sidebar-bg: #051e34;
+    --color-green-bg: #198754;
+    --color-yellow-bg: #ffc107;
+    --color-red-bg: #dc3545;
+    --color-bell-bg: #ff8f00;
+}
+
 .nf-debug {
     border: 1px solid red;
 }
@@ -16,7 +26,7 @@ header{
     width: 200px;
     height: calc(100% - 70px);
     margin-top: 70px;
-    background-color: grey;
+    background-color: var(--color-sidebar-bg);
     background-image: url('../img/sidebar-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,4 +44,6 @@ main {
     border-radius: 50%;
 }
 
-
+.data-w{
+    min-width: 105px;
+}
