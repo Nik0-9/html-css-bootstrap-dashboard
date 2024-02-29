@@ -14,6 +14,7 @@ ul{
     padding: 0;
 }
 
+/* general */
 .nf-debug {
     border: 1px solid red;
 }
@@ -21,10 +22,12 @@ ul{
 .body{
     font-family: "Roboto", sans-serif;
 }
-
+/* nav */
 nav{
     height: 70px;
 }
+
+/* wrapper */
 
 /* sidebar */
 #sidebar {
@@ -56,6 +59,7 @@ main {
 }
 header{
     margin-top: 70px;
+    background-color: var(--color-hero-bg);
 }
 /* card Prossime classi */
 .row-avatar{
@@ -73,7 +77,8 @@ header{
         width: 50px;
     }
     main{
-        width: calc(100% - 50px);
+        /* width: calc(100% - 50px); */
+        width: 100%;
     }
     #sidebar span{
         display: none;
@@ -81,13 +86,13 @@ header{
 }
 @media screen and (max-width: 576px){
     #content table tr th:nth-child(2),
-    th:nth-child(3)
+    #content table tr th:nth-child(3)
     {
         display: none;
     }
 
     #content table tr td:nth-child(2),
-    th:nth-child(3)
+    #content table tr td:nth-child(3)
     {
         display: none;
     }
