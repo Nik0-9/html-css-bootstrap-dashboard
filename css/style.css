@@ -8,6 +8,12 @@
     --color-bell-bg: #ff8f00;
 }
 
+/* reset */
+ul{
+    list-style: none;
+    padding: 0;
+}
+
 .nf-debug {
     border: 1px solid red;
 }
@@ -19,25 +25,39 @@
 nav{
     height: 70px;
 }
-header{
-    margin-top: 70px;
-}
+
+/* sidebar */
 #sidebar {
-    width: 200px;
+    width: 120px;
     height: calc(100% - 70px);
     margin-top: 70px;
+    padding-top: 20px;
     background-color: var(--color-sidebar-bg);
     background-image: url('../img/sidebar-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+#sidebar ul li:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.side-bot:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+/* main */
 main {
     width: calc(100% - 120px);
     height: 100%;
     overflow-y: auto;
 }
-
+header{
+    margin-top: 70px;
+}
+/* card Prossime classi */
 .row-avatar{
     width: 30px;
     height: 30px;
@@ -48,6 +68,17 @@ main {
     min-width: 105px;
 }
 
+@media screen and (max-width: 768px){
+    #sidebar{
+        width: 50px;
+    }
+    main{
+        width: calc(100% - 50px);
+    }
+    #sidebar span{
+        display: none;
+    }
+}
 @media screen and (max-width: 576px){
     #content table tr th:nth-child(2),
     th:nth-child(3)
