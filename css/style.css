@@ -96,6 +96,15 @@ header h3{
     cursor: pointer;
     background-color:  #1150a8;
 }
+
+.offcanvas.offcanvas-end{
+    width: 70%;
+}
+
+.p-check{
+    padding-left: 2.3rem;
+    margin-bottom: 1rem;
+}
 /* card Prossime classi */
 .row-avatar{
     width: 30px;
@@ -120,7 +129,7 @@ header h3{
     }
 
     .disp-no{
-        display: block;
+        display: inline-block;
     }
     #sidebar{
         width: 50px;
@@ -162,5 +171,9 @@ header h3{
 
     .head-right{
         order: 0;
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 100%;
     }
 }
