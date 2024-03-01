@@ -6,6 +6,7 @@
     --color-yellow-bg: #ffc107;
     --color-red-bg: #dc3545;
     --color-bell-bg: #ff8f00;
+    --color-badge-hero: #165bba;
 }
 
 /* reset */
@@ -24,16 +25,36 @@ ul{
 }
 /* nav */
 nav{
-    height: 70px;
+    height: 60px;
+}
+
+#logo-nav-small{
+    width: 50px;
+}
+
+.log, .icon-nav{
+    width: 200px;
+    height: 100%;
+}
+
+.disp-no{
+    display: none;
+}
+
+nav button{
+    border: none;
+    background: transparent;
 }
 
 /* wrapper */
+#wrapper{
 
+}
 /* sidebar */
 #sidebar {
     width: 120px;
-    height: calc(100% - 70px);
-    margin-top: 70px;
+    height: calc(100% - 60px);
+    margin-top: 60px;
     padding-top: 20px;
     background-color: var(--color-sidebar-bg);
     background-image: url('../img/sidebar-bg.png');
@@ -53,13 +74,27 @@ nav{
 
 /* main */
 main {
+    padding-top: 60px;
     width: calc(100% - 120px);
-    height: 100%;
-    overflow-y: auto;
 }
 header{
-    margin-top: 70px;
+    
     background-color: var(--color-hero-bg);
+}
+
+header h3{
+    font-weight: 300;
+}
+
+.nf-badge{
+    background-color: var(--color-badge-hero);
+    border-radius: 20px;
+    
+}
+
+.nf-badge:hover{
+    cursor: pointer;
+    background-color:  #1150a8;
 }
 /* card Prossime classi */
 .row-avatar{
@@ -73,16 +108,34 @@ header{
 }
 
 @media screen and (max-width: 768px){
+    .logo-nav{
+        display: none;
+    }
+
+    .icon-nav>*:not(:last-child){
+        display: none;
+    }
+    .log, .icon-nav{
+        width: auto;
+    }
+
+    .disp-no{
+        display: block;
+    }
     #sidebar{
         width: 50px;
+    }
+    #sidebar span{
+        display: none;
     }
     main{
         /* width: calc(100% - 50px); */
         width: 100%;
     }
-    #sidebar span{
+    .badge-none{
         display: none;
     }
+
 }
 @media screen and (max-width: 576px){
     #content table tr th:nth-child(2),
@@ -95,5 +148,19 @@ header{
     #content table tr td:nth-child(3)
     {
         display: none;
+    }
+    header>div{
+        flex-direction: column;
+    }
+    .head-left{
+        order: 1;
+    }
+
+    .head-center{
+        order: 2;
+    }
+
+    .head-right{
+        order: 0;
     }
 }
