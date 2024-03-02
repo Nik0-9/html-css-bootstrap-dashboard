@@ -55,7 +55,6 @@ nav button{
     width: 120px;
     height: calc(100% - 60px);
     margin-top: 60px;
-    padding-top: 20px;
     background-color: var(--color-sidebar-bg);
     background-image: url('../img/sidebar-bg.png');
     background-size: contain;
@@ -78,7 +77,6 @@ main {
     width: calc(100% - 120px);
 }
 header{
-    
     background-color: var(--color-hero-bg);
 }
 
@@ -86,10 +84,13 @@ header h3{
     font-weight: 300;
 }
 
+
+.head-right{
+    min-width: 180px;
+}
 .nf-badge{
     background-color: var(--color-badge-hero);
     border-radius: 20px;
-    
 }
 
 .nf-badge:hover{
@@ -98,7 +99,7 @@ header h3{
 }
 
 .offcanvas.offcanvas-end{
-    width: 70%;
+    width: 60%;
 }
 
 .p-check{
@@ -127,7 +128,6 @@ header h3{
     .log, .icon-nav{
         width: auto;
     }
-
     .disp-no{
         display: inline-block;
     }
@@ -143,6 +143,10 @@ header h3{
     }
     .badge-none{
         display: none;
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 90%;
     }
 
 }
